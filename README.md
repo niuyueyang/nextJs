@@ -101,7 +101,7 @@ const {router} = this.props
 console.log(router.query.参数); //参数获取
 export default withRouter(Home)
 ```
-- getInitialProps服务器端渲染，没有跨域
+### getInitialProps服务器端渲染，没有跨域
 ```javascript
 static async getInitialProps(){
     const res=await axios.get('https://m.maizuo.com/gateway?cityId=440300&pageNum=1&pageSize=10&type=1&k=8326610',{
@@ -125,7 +125,7 @@ static async getInitialProps(){
   )
 })}
 ```
-- 自定义404页面（在pages文件夹下，新建_error.js）
+### 自定义404页面（在pages文件夹下，新建_error.js）
 ```javascript
 import React,{Component} from 'react';
 export default class Error extends Component{
@@ -138,7 +138,7 @@ export default class Error extends Component{
   }
 }
 ```
-- 导航守卫
+### 导航守卫
 ```javascript
 import Router from 'next/router'
 const linkStyle = {
