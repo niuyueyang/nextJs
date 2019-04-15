@@ -1,4 +1,4 @@
-# nextJs
+# nextJs知识点总结
 ### 所有组件均在pages下才可以访问到
 ### 样式
 - 在render函数里面进行
